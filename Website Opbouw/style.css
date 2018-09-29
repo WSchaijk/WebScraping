@@ -1,0 +1,26 @@
+/* Het maken van een CSS class */
+.horizontalList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Een style voor een specifiek element in een class */
+.horizontalList li {
+    margin-right: 10px;
+    float: left;
+}
+
+/* Een style voor een HTML element */
+img {
+    margin: 0 10px 10px 0;
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+/* Een style voor een id */
+#paragraph {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}

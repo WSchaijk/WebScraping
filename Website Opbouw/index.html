@@ -1,0 +1,84 @@
+<!-- Dit geeft aan dat we werken met HTML 5 -->
+<!DOCTYPE html>
+
+<!-- Het begin van HTML -->
+<html>
+    <!-- Informatie over de website, ookwel metadata -->
+    <head>
+        <!-- De titel van het document, te zien op te zien op tabbladen-->
+        <title>Voorbeeld Website</title>
+        
+        <!-- 
+            Het stylesheet bestanden linken met de pagina
+            rel:    de relatie met het gekoppelde bestand 
+            type:   het type bestand waarmee een koppeling word gemaakt
+            href:   de locatie van het bestand
+        -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!--
+            Informatie over de website
+            charset:    De manier waarop de tekens van de website zijn opgeslagen
+            name:       De naam van de informatie
+            content:    De daadwerkelijke informatie
+        -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Een voorbeeld website voor de Hogeschool Rotterdam">
+        <meta name="keywords" content="HTML, CSS, Website, Voorbeeld, Beschrijving">
+        <meta name="author" content="Wesley van Schaijk">
+    </head>
+
+    <!-- De inhoud van de website -->
+    <body>
+        <!-- Het maken van een header voor de website -->
+        <header>
+            <!-- 
+                Het begin van een ongesorteerde lijst met bolletjes 
+                class:  De css class die wordt gebruikt voor dit element
+            -->
+            <ul class="horizontalList">
+                <!-- De items van de lijst -->
+                <li>Hogeschool Rotterdam</li>
+                <li>3 Oktober 2018</li>
+                <li>Wesley van Schaijk</li>
+                <li>0925379</li>
+            </ul>
+
+            <!-- Regel naar beneden-->
+            <br/>
+
+            <!-- Het maken van een titel van het hoogste niveau -->
+            <h1>Voorbeeldwebsite</h1>
+        </header>
+
+        <!-- De kern inhoud van het document -->
+        <main>
+            <!--
+                Een afbeelding
+                src:        De locatie van de afbeelding
+                alt:        De tekst die word getoond als de afbeelding niet beschikbaar is
+                title:      De titel van de afbeelding
+            -->
+            <img src="logo.jpg" alt="Hogeschool Rotterdam" title="Hogeschool Rotterdam"/> 
+
+            <!-- 
+                Een paragraaf 
+                id: Het id van het element
+            -->
+            <p id="paragraph">
+                Dit is een stukje tekst dat is toegevoegd aan de website. De tekst zelfs is niet heel erg boeiend, maar demonstreert hoe tekst op een website wordt getoond.
+            </p>
+
+            <!--
+                Een link
+                href:       Het doel, dit is waar we naartoe linken
+                hreflang:   De taal van het doel
+                rel:        De relatie met het doel
+                target:     Hoe het doel moet worden geopen
+                type:       Wat voor document is het doel
+                title:      De naam van het doel, word getoond als tooltip
+            -->
+            <a href="https://github.com/WSchaijk/WebScraping" hreflang="en_US" rel="external" target="_blank" type="html" title="GitHub">GitHub</a>
+        </main>
+    </body>
+</html>
