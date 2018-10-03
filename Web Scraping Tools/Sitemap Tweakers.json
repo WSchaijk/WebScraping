@@ -1,0 +1,72 @@
+{
+    "_id":"tweakers-demo",
+    "startUrl":["https://tweakers.net/nieuws"],
+    "selectors": [
+        { 
+            "id":"Page",
+            "type":"SelectorElement",
+            "parentSelectors":["_root"],
+            "selector":".newsPortal",
+            "multiple":false,
+            "delay":0
+        },
+        
+        {
+            "id":"News",
+            "type":"SelectorElement",
+            "parentSelectors":["Page","Pagination"],
+            "selector":".newsContentBlock",
+            "multiple":true,
+            "delay":0
+        },
+        
+        {
+            "id":"Title",
+            "type":"SelectorText",
+            "parentSelectors":["News"],
+            "selector":"h1 a",
+            "multiple":false,
+            "regex":"",
+            "delay":0
+        },
+        
+        {
+            "id":"Author",
+            "type":"SelectorText",
+            "parentSelectors":["News"],
+            "selector":"span.author span",
+            "multiple":false,
+            "regex":"",
+            "delay":0
+        },
+            
+        {
+            "id":"Preview",
+            "type":"SelectorText",
+            "parentSelectors":["News"],
+            "selector":".lead",
+            "multiple":false,
+            "regex":"",
+            "delay":0
+        },
+        
+        {
+            "id":"Body",
+            "type":"SelectorText",
+            "parentSelectors":["News"],
+            "selector":".article",
+            "multiple":false,
+            "regex":"",
+            "delay":0
+        },
+        
+        {
+            "id":"Pagination",
+            "type":"SelectorLink",
+            "parentSelectors":["Page","Pagination"],
+            "selector":".previous a",
+            "multiple":true,
+            "delay":0
+        }
+    ]
+}
